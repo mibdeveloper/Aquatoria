@@ -20,13 +20,13 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'aquatoria');
+define('DB_NAME', '');
 
 /** MySQL database username */
-define('DB_USER', 'aquatoria_db');
+define('DB_USER', '');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'DGxkZoU4aD7MaSVP');
+define('DB_PASSWORD', '');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
