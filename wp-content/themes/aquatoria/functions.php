@@ -2,12 +2,12 @@
 
 function load_style_script(){
 
-    wp_enqueue_style('style', get_template_directory_uri().'/style.css', ['normalize','bootstrap']);
+    wp_enqueue_style('style', get_template_directory_uri().'/style.min.css', ['normalize','bootstrap']);
     
     wp_enqueue_style('bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css');
 
     wp_enqueue_style('bootstrapThemes', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css');
-    wp_enqueue_style('normalize', get_template_directory_uri().'/css/normalize.css');
+    wp_enqueue_style('normalize', get_template_directory_uri().'/css/normalize.min.css');
     wp_enqueue_style('bootstrap-datetimepicker-css', get_template_directory_uri().'/css/bootstrap-datetimepicker.min.css');
 
     wp_enqueue_script( 'jQuery_1-11-1', get_template_directory_uri().'/js/jquery-1.11.1.min.js');
@@ -16,14 +16,14 @@ function load_style_script(){
     wp_enqueue_script( 'bootstrapJs', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js');
     wp_enqueue_script( 'bootstrap-datetimepicker-js', get_template_directory_uri().'/js/bootstrap-datetimepicker.min.js');
 
-    wp_enqueue_style( 'jquery.jdigiclock-style', get_template_directory_uri() . '/css/jquery.jdigiclock.css');
+    wp_enqueue_style( 'jquery.jdigiclock-style', get_template_directory_uri() . '/css/jquery.jdigiclock.min.css');
     //wp_enqueue_script('jquery', get_template_directory_uri().'../../../wp-includes/js/jquery/jquery.js');
     wp_enqueue_script( 'json2', get_template_directory_uri().'../../../wp-includes/js/json2.min.js');
-    wp_enqueue_script( 'digiclock', get_template_directory_uri().'/js/jquery.jdigiclock.js');
+    wp_enqueue_script( 'digiclock', get_template_directory_uri().'/js/jquery.jdigiclock.min.js');
 
     wp_enqueue_script( 'jsCalendar', 'http://rche.ru/examples/cal.js');
 
-    wp_enqueue_script('myScript', get_template_directory_uri().'/js/myScript.js');
+    wp_enqueue_script('myScript', get_template_directory_uri().'/js/myScript.min.js');
 }
 
 add_action('wp_enqueue_scripts','load_style_script');
